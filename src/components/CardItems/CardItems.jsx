@@ -28,7 +28,7 @@ export default function CardItems({ itemsData }) {
           </section>
 
           <footer>
-            <button><Link to='/ItemDetails'>Ver detalle</Link>  </button>
+            <button><Link to='/VerDetalles'>Ver detalle</Link>  </button>
           </footer>
         </div>
       </div>

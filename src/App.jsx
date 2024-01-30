@@ -13,6 +13,7 @@ import Grabados from "./pages/Grabados/Grabados";
 import Pinturas from "./pages/Pinturas/Pinturas";
 import Merch from "./pages/Merch/Merch";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import VerDetalles from "./pages/VerDetalles/VerDetalles";
 
 
 
@@ -32,7 +33,7 @@ function App() {
         <Route path="/Merch" element={<Merch />} />
         <Route path="/Pinturas" element={<Pinturas />} />
         <Route path="*" element={<ErrorPage />} />
-      
+        <Route path="/VerDetalles" element={ <VerDetalles/>} />
       </Routes>
 
     </Router>
