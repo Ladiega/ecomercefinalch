@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useState } from "react"
+import { useState } from "react";
+import './ItemCount.css';
 
 export default function ItemCount({stock, inital, onAdd}) {
 
@@ -21,9 +22,9 @@ export default function ItemCount({stock, inital, onAdd}) {
   return (
     <div className="counter_container">
       <div className="controls">
-        <button onClick={increase}>Increase</button>
+        <button onClick={increase}>+</button>
         <h4>Cantidad: {quantity}</h4>
-        <button onClick={subtract}>Subtract</button>
+        <button onClick={subtract}>-</button>
       </div>
       <div>
         <button onClick={() => onAdd(quantity)} disabled={!stock}>

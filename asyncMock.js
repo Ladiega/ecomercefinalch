@@ -34,3 +34,4 @@ export const getProducts = () => {
     }, 500)
   })
 }
+
