@@ -34,7 +34,7 @@ function App() {
         <Route path="/Merch" element={<Merch />} />
         <Route path="/Pinturas" element={<Pinturas />} />
         <Route path="*" element={<ErrorPage />} />
-        <Route path="/VerDetalles:itemId" element={<VerDetalles />} />
+        <Route path="/VerDetalles" element={<VerDetalles />} />
         <Route path="/TerminarCompra" element={<TerminarCompra/>}/>
       </Routes>
 
