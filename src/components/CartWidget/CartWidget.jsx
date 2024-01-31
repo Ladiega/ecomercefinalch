@@ -11,8 +11,8 @@ export default function CartWidget() {
   }
   return (    
     <div>
-      <img src={cart} alt="cart" style={cartStyles} />
-      0
+      <img src={cart} alt="cart" style={cartStyles}  />
+      <h1></h1>
     </div>
   )
     
