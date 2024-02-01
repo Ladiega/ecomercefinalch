@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import './item.css';
+import { Link } from 'react-router-dom';
+
 export default function Item({id, name, img, price, stock}) {
   return (
     <article className='item_container'>
@@ -15,7 +17,7 @@ export default function Item({id, name, img, price, stock}) {
         <p>Stock:{stock}</p>
       </section>
       <footer>
-        <button>Ver detalles</button>
+        <Link to={`/itme/${id}`}>Ver detalle</Link>
       </footer>
    </article>
   )

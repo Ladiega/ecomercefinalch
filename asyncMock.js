@@ -21,7 +21,7 @@ const products = [{
     id: '3',
     name: 'RYU',
     price: 500,
-    category: 'pintura',
+    category: 'grabado',
     img: 'https://firebasestorage.googleapis.com/v0/b/fb-ecomerce.appspot.com/o/paint3.jpg?alt=media&token=b85c07cc-357c-45c2-8a1e-77d8471c88f4',
     stock: 1,
     descrption: 'Papel acuarela 90x75cn, Tinta, Acuarelas'
@@ -34,4 +34,18 @@ export const getProducts = () => {
     }, 500)
   })
 }
+export const getProductById = (productId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find(prod => prod.id === productId))
+    },500)
+  })
+}
+export const getProductsByCategory = (productCategory) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find(prod => prod.id === productCategory))
 
+    },500)
+  })
+}

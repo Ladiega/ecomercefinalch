@@ -1,5 +1,5 @@
 import ItemCount from "../../components/ItemCount/ItemCount";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -9,6 +9,8 @@ export default function VerDetalles({ quantity }) {
   const handleOnAdd = (quantity) => {
     setQuantityAdded(quantity)
     console.log(`Has añadido ${quantity} productos a tu carrito de campras`)
+
+    
   }
   return (
     <div>

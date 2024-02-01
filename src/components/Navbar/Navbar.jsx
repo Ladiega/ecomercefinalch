@@ -1,6 +1,6 @@
 import './navbar.css';
 import CartWidget from "../CartWidget/CartWidget"
-import {Link} from "react-router-dom"
+import {NavLink,Link} from "react-router-dom"
 
 export default function Navbar() {
   return (
@@ -10,6 +10,8 @@ export default function Navbar() {
         <button><Link to="/Merch">Merch</Link></button>
         <button><Link to="/Pinturas">Pinturas</Link></button>
         <button><Link to="/Grabados">Grabados</Link></button>  
+        <NavLink to={`/category/pintura`} />
+        <NavLink to={`/category/grabado`} />
       </section>
       <CartWidget />
     </nav>
