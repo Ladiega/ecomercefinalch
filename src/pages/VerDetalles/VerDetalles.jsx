@@ -10,6 +10,27 @@ export default function VerDetalles({ quantity }) {
     setQuantityAdded(quantity)
     console.log(`Has añadido ${quantity} productos a tu carrito de campras`)
 
+    // const { itemId } = useParams()
+
+    // useEffect(() => {
+    //   setLoading(true)
+    //   const docRef = doc(db, 'products', itemId)
+
+    //   getDoc(docRef)
+    //     .then(response => {
+    //     const data = response.data()
+    //       const productsAdapted = { id: response.id, ...data }
+    //       setProduct(productsAdapted)
+    //     })
+    //     .catch(error => {
+    //     console.log(error)
+    //     })
+    //     .finally(() => {
+    //     setLoading(false)
+    //   })
+
+    // },[itemId])
+
     
   }
   return (

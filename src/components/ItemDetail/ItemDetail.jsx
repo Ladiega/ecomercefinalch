@@ -39,6 +39,7 @@ export default function ItemDetail({ id, name, img, category, description, price
 
           )
         }
+        {handleOnAdd}
       </footer>
     </article>
   )
