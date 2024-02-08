@@ -16,3 +16,12 @@ button {
   align-items: center;
 
 }
+
+.home_container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
